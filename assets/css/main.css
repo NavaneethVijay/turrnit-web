@@ -1,0 +1,28 @@
+body {
+  color: #2e2e2e;
+  background: #fdfdfd;
+  overflow-x: hidden;
+}
+
+
+.btn {
+  color: #605cef;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 4px solid #605cef;
+  border-left: 4px solid #605cef;
+  border-top: 0.5px solid #605cef;
+  border-right: 0.5px solid #605cef;
+  border-radius: 20px 0 20px 0;
+  font-size: 18px;
+}
+.btn:hover {
+  color: #fff;
+  background: #605cef;
+}
+
+
+.title {
+  font-weight: bold;
+  line-height: 80px;
+  color: #2e2e2e;
+}

@@ -9,10 +9,10 @@
   </div>
 </template>
 <script>
-import Landing from '@/components/home/Landing'
-import Overview from '@/components/home/overview'
-import WhyUse from '@/components/home/WhyUse'
-import Contact from '@/components/home/Contact'
+import Landing from '~/components/home/Landing'
+import Overview from '~/components/home/overview'
+import WhyUse from '~/components/home/WhyUse'
+import Contact from '~/components/home/Contact'
 export default {
   components: {
     Landing,

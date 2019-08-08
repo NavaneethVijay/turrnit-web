@@ -30,7 +30,7 @@
             </svg>
           </button>
         </div>
-        <div class="w-full block lg:flex lg:items-center lg:w-auto ">
+        <div class="w-full block lg:flex lg:items-center lg:w-auto menu-list ">
           <div class="text-lg lg:flex-grow mr-10">
             <nuxt-link
               to="#responsive-header"
@@ -51,14 +51,6 @@
               Why Turrnit ?
             </nuxt-link>
           </div>
-          <div>
-            <nuxt-link
-              to="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-            >
-              Download
-            </nuxt-link>
-          </div>
         </div>
       </nav>
     </header>
@@ -71,15 +63,23 @@ export default {}
 
 <style lang="scss" scoped>
 .header-main {
-  background: #605cef;
+  background: #dc0000;
   color: #fff;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
-  box-shadow: 0 10px 20px #c06df033;
+  box-shadow: 0 10px 20px #dc000033;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
   nav {
     padding: 15px;
+  }
+  .menu-list {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 </style>

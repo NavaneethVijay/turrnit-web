@@ -45,7 +45,7 @@ export default {
 .whyuse-content {
   box-sizing: border-box;
   padding: 20px 0;
-  height: 90vh;
+  min-height: 90vh;
   .heading {
     margin-top: 50px;
   }
@@ -60,18 +60,26 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 100px;
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    }
     .item {
       flex-basis: 25%;
       background: #fff;
       height: 300px;
       margin: 0 20px;
       border-radius: 10px;
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+        margin: 20px;
+      }
 
       cursor: pointer;
       text-align: center;
       box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
-      border-bottom: 4px solid #605cef;
+      border-bottom: 4px solid #dc0000;
       .item-contents {
         height: 100%;
         overflow: hidden;

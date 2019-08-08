@@ -14,8 +14,11 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
 .main {
   position: relative;
+  .main-content {
+    overflow: hidden;
+  }
 }
 </style>

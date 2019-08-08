@@ -1,6 +1,6 @@
 <template>
   <div class="contact-main">
-    <div class="contact-content container">
+    <div class="contact-content">
       <div class="info-wrapper">
         <h1 class="title text-6xl">
           Register to get notifed
@@ -38,22 +38,48 @@ export default {
 
 <style lang="scss" scoped>
 .contact-main {
-  height: 50vh;
+  min-height: 50vh;
   overflow: hidden;
   .contact-content {
+    @media (max-width: 768px) {
+      padding: 30px;
+      margin: 0 20px;
+    }
+    .title {
+      color: #dc0000;
+      @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 50px;
+      }
+    }
     box-sizing: border-box;
     padding: 50px;
-    background: #fff;
+    background: #ffca99;
+    color: #dc0000;
     border-radius: 50px 0 50px 0;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px 0 #dc00000d;
     .info-footer {
       width: 50%;
       margin-top: 50px;
+      @media (max-width: 768px) {
+        width: 100%;
+        form {
+          background: none;
+          > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            button {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
       form {
         background: #fff;
         padding: 20px;
         border-radius: 50px 0 50px 0;
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.05);
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
         input {
           border-bottom: 1px solid #f2f2f2;
         }

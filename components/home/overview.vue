@@ -1,7 +1,9 @@
 <template>
   <div class="overview-wrapper ">
     <div class="flex section-overview container">
-      <div class="w-1/2" />
+      <div class="w-1/2 overview-img">
+        <img src="~assets/images/landing-bg.png" alt="" />
+      </div>
       <div class="w-1/2 left-section">
         <div class="info">
           <h3 class="subtitle text-2xl">
@@ -48,16 +50,13 @@ export default {}
   // min-height: 80vh;
   padding: 150px 0;
   align-items: center;
-  background: url('~assets/images/landing-bg.png');
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: left center;
   transform: skewY(5deg);
   @media (max-width: 768px) {
-    flex-direction: column;
-    margin-top: 30px;
-    background-size: 90%;
-    background-position-y: 90%;
+    flex-direction: column-reverse;
+    padding: 50px 0;
+    .overview-img {
+      width: 90%;
+    }
     .left-section {
       width: 100%;
     }
@@ -75,6 +74,11 @@ export default {}
     font-weight: bold;
     line-height: 80px;
     color: #2e2e2e;
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      line-height: 50px;
+    }
   }
   .subtitle {
     color: #2e2e2e;
@@ -96,14 +100,17 @@ export default {}
       font-weight: lighter;
       width: 80%;
       margin-left: auto;
-      @media (max-width: 768px) {
-        margin: 40px auto;
-      }
       h3 {
         font-size: 20px;
       }
       .btn {
         margin: 20px 0;
+      }
+      @media (max-width: 768px) {
+        margin: 40px auto;
+        h3 {
+          font-size: 18px;
+        }
       }
     }
   }

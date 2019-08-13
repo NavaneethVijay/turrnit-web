@@ -108,6 +108,9 @@ export default {
     opacity: 0.6;
     font-weight: lighter;
     font-size: 20px;
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
   }
   .item-grid {
     display: flex;

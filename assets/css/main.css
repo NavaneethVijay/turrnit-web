@@ -13,7 +13,7 @@ body {
   border-top: 0.5px solid #2858d4;
   border-right: 0.5px solid #2858d4;
   border-radius: 20px 0 20px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn:hover {
   color: #fff;
@@ -25,4 +25,16 @@ body {
   font-weight: bold;
   line-height: 80px;
   color: #2e2e2e;
+
+}
+
+@media(max-width: 768px){
+  .title{
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .btn{
+    font-size: 14px;
+    border-radius: 15px 0 15px 0;
+  }
 }

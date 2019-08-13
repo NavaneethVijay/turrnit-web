@@ -9,7 +9,7 @@
         a enim ultrices condimentum. Maecenas sit amet vehicula odio.
       </h3>
     </div>
-    <hooper :settings="hooperSettings" style="height: 300px">
+    <hooper :settings="hooperSettings">
       <slide>
         <div class="slide-card">
           <div class="slide-content">
@@ -76,7 +76,7 @@ export default {
   data() {
     return {
       hooperSettings: {
-        itemsToShow: 3.5,
+        itemsToShow: 1.5,
         infiniteScroll: false,
         transition: 1000,
         trimWhiteSpace: true,
@@ -109,6 +109,9 @@ export default {
     max-width: 50%;
     opacity: 0.6;
     margin: 20px auto 30px auto;
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
   }
 }
 .slide-card {
@@ -125,6 +128,12 @@ export default {
   }
   .slide-content {
     box-sizing: border-box;
+    height: 100%;
+  }
+}
+.hooper {
+  height: 300px;
+  @media (max-width: 768px) {
     height: 100%;
   }
 }

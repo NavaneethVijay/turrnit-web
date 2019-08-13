@@ -109,21 +109,34 @@ export default {}
     margin-top: 30px;
     background-size: 90%;
     background-position-y: 90%;
+    padding: 50px 0;
   }
 
   .image-section {
     display: flex;
     justify-content: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   .title {
     font-weight: bold;
     line-height: 60px;
     font-size: 50px;
     color: #2e2e2e;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      line-height: 50px;
+    }
   }
   .subtitle {
     color: #2e2e2e;
     font-weight: lighter;
+  }
+  .left-section {
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
   .features-list {
     margin-top: 50px;

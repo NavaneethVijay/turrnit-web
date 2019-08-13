@@ -5,7 +5,7 @@
         <h1 class="title text-6xl">
           Register to get notified
         </h1>
-        <h3>
+        <h3 class="sub-info">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
           nulla a enim ultrices condimentum.
         </h3>
@@ -54,8 +54,13 @@ export default {
     .title {
       color: #85edee;
       @media (max-width: 768px) {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 50px;
+      }
+    }
+    .sub-info {
+      @media (max-width: 768px) {
+        font-size: 16px;
       }
     }
     box-sizing: border-box;
@@ -69,6 +74,7 @@ export default {
       margin-top: 50px;
       @media (max-width: 768px) {
         width: 100%;
+        margin-top: 20px;
         form {
           background: none;
           > div {

@@ -73,6 +73,9 @@ export default {
 
 <style lang="scss" scoped>
 .landing-main {
+  @media (max-width: 767px) {
+    min-height: 100vh;
+  }
 }
 .section-content {
   height: 60vh;
@@ -81,7 +84,6 @@ export default {
   @media (max-width: 768px) {
     flex-direction: column;
     box-sizing: border-box;
-    padding: 10px;
     .newspaper-sources {
       width: 100%;
       position: relative;
@@ -105,6 +107,9 @@ export default {
   .subtitle {
     color: #2e2e2e;
     font-weight: lighter;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
   .left-section {
     height: 100%;
@@ -114,8 +119,14 @@ export default {
       margin: 50px 0;
       color: #2e2e2e;
       font-weight: lighter;
+      @media (max-width: 768px) {
+        margin: 30px 0;
+      }
       h3 {
         font-size: 20px;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
       }
       .btn {
         margin: 20px 0;
@@ -138,12 +149,19 @@ export default {
         margin-bottom: 10px;
         margin-left: 10px;
       }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     .input-control {
       margin: 10px 0;
       padding: 15px 20px;
       border-radius: 50px 0 50px 0;
       width: 100%;
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
       input {
         border-bottom: 1px solid #f2f2f2;
       }
@@ -220,6 +238,9 @@ export default {
 .newspaper-sources {
   .landing-side-img {
     width: 80%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 </style>

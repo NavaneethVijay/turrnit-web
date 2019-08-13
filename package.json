@@ -17,8 +17,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "hooper": "^0.3.2",
     "node-sass": "^4.12.0",
-    "nuxt": "^2.0.0",
-    "sass-loader": "^7.1.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "tailwindcss": "^1.0.0",
@@ -37,6 +36,7 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
   }
 }

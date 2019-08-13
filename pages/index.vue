@@ -12,7 +12,7 @@
 </template>
 <script>
 import Landing from '~/components/home/Landing.vue'
-import Overview from '~/components/home/overview.vue'
+import Overview from '~/components/home/Overview.vue'
 import WhyUse from '~/components/home/WhyUse.vue'
 import Contact from '~/components/home/Contact.vue'
 import Features from '~/components/home/Features.vue'

@@ -63,13 +63,13 @@ export default {}
 
 <style lang="scss" scoped>
 .header-main {
-  background: #dc0000;
+  background: #2858d4;
   color: #fff;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
-  box-shadow: 0 10px 20px #dc000033;
+  box-shadow: 0 10px 20px #2858d433;
   @media (max-width: 768px) {
     padding: 0;
   }

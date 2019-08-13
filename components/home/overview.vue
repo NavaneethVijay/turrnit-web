@@ -21,13 +21,13 @@
               </h3>
             </div>
           </div>
-          <div class="info-footer">
+          <!-- <div class="info-footer">
             <div class="info-footer-wrapper">
               <h3>
                 Turrnit has become a reputable and well known Delivery Service
               </h3>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -42,14 +42,16 @@ export default {}
 .overview-wrapper {
   background: #fff;
   transform: skewY(-5deg);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
 }
 .section-overview {
-  min-height: 80vh;
+  // min-height: 80vh;
+  padding: 150px 0;
   align-items: center;
-  background: url('~assets/images/img2.png');
+  background: url('~assets/images/landing-bg.png');
   background-size: 50%;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: left center;
   transform: skewY(5deg);
   @media (max-width: 768px) {
     flex-direction: column;
@@ -64,7 +66,7 @@ export default {}
     content: '';
     width: 6px;
     height: 80%;
-    background: #dc0000;
+    background: #2858d4;
     border-radius: 20px;
     display: inline-block;
     margin-left: 30px;
@@ -83,6 +85,8 @@ export default {}
     align-items: center;
     display: flex;
     text-align: right;
+    border-right: 5px solid #2858d4;
+    padding-right: 20px;
     @media (max-width: 768px) {
       text-align: center;
     }

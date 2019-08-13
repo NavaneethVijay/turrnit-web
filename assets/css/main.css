@@ -1,23 +1,23 @@
 body {
   color: #2e2e2e;
-  background: #fff2e6;
+  background: #f7f9ff;
   overflow-x: hidden;
 }
 
 
 .btn {
-  color: #dc0000;
+  color: #2858d4;
   transition: all 0.5s ease-in-out;
-  border-bottom: 4px solid #dc0000;
-  border-left: 4px solid #dc0000;
-  border-top: 0.5px solid #dc0000;
-  border-right: 0.5px solid #dc0000;
+  border-bottom: 4px solid #2858d4;
+  border-left: 4px solid #2858d4;
+  border-top: 0.5px solid #2858d4;
+  border-right: 0.5px solid #2858d4;
   border-radius: 20px 0 20px 0;
   font-size: 18px;
 }
 .btn:hover {
   color: #fff;
-  background: #dc0000;
+  background: #2858d4;
 }
 
 

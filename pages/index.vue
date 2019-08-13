@@ -3,7 +3,9 @@
     <div class="landing-section">
       <Landing />
       <Overview />
+      <Newspapers />
       <WhyUse />
+      <Features />
       <Contact />
     </div>
   </div>
@@ -13,12 +15,16 @@ import Landing from '~/components/home/Landing.vue'
 import Overview from '~/components/home/overview.vue'
 import WhyUse from '~/components/home/WhyUse.vue'
 import Contact from '~/components/home/Contact.vue'
+import Features from '~/components/home/Features.vue'
+import Newspapers from '~/components/home/Newspapers.vue'
 export default {
   components: {
     Landing,
     Overview,
     WhyUse,
-    Contact
+    Contact,
+    Features,
+    Newspapers
   },
   data() {
     return {

@@ -1,9 +1,9 @@
 <template>
-  <div class="contact-main">
-    <div class="contact-content">
+  <div class="contact-main ">
+    <div class="contact-content container">
       <div class="info-wrapper">
         <h1 class="title text-6xl">
-          Register to get notifed
+          Register to get notified
         </h1>
         <h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
@@ -40,13 +40,19 @@ export default {
 .contact-main {
   min-height: 50vh;
   overflow: hidden;
+  background: #f7f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .contact-content {
+    height: 80%;
     @media (max-width: 768px) {
       padding: 30px;
       margin: 0 20px;
     }
     .title {
-      color: #dc0000;
+      color: #85edee;
       @media (max-width: 768px) {
         font-size: 36px;
         line-height: 50px;
@@ -54,10 +60,10 @@ export default {
     }
     box-sizing: border-box;
     padding: 50px;
-    background: #ffca99;
-    color: #dc0000;
+    background: #2858d4;
+    color: #85edee;
     border-radius: 50px 0 50px 0;
-    box-shadow: 0 10px 20px 0 #dc00000d;
+    box-shadow: 0 10px 20px #2858d433;
     .info-footer {
       width: 50%;
       margin-top: 50px;

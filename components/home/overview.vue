@@ -2,7 +2,7 @@
   <div class="overview-wrapper ">
     <div class="flex section-overview container">
       <div class="w-1/2 overview-img">
-        <img src="~assets/images/landing-bg.png" alt="" />
+        <img src="~assets/images/undraw_back_home_nl5c.svg" alt="" />
       </div>
       <div class="w-1/2 left-section">
         <div class="info">
@@ -13,13 +13,13 @@
             Delivery
           </h1>
           <h3 class="subtitle text-2xl">
-            to the door.
+            at the door.
           </h3>
           <div class="info-main">
             <div class="info-wrapper ">
               <h3>
                 “Find Newpaper Vendors in your area in an instant, make
-                Subscription through the app and avail offers.”
+                subscription through the app and avail offers.”
               </h3>
             </div>
           </div>
@@ -51,12 +51,17 @@ export default {}
   padding: 150px 0;
   align-items: center;
   transform: skewY(5deg);
+  .overview-img {
+    img {
+      width: 80%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     padding: 50px 0;
-    .overview-img {
-      width: 90%;
-    }
     .left-section {
       width: 100%;
     }
@@ -107,7 +112,7 @@ export default {}
         margin: 20px 0;
       }
       @media (max-width: 768px) {
-        margin: 40px auto;
+        margin: 20px auto;
         h3 {
           font-size: 18px;
         }

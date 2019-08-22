@@ -3,10 +3,11 @@
     <div class="contact-content container">
       <div class="info-wrapper">
         <h1 class="title text-6xl">
-          Join the waiting list!
+          Request early access
         </h1>
         <h3 class="sub-info">
-          Be amongst the first to get your free subscriptions.
+          Be part of the first users to try Turrnit, get 20% off on your first
+          subscripiton!
         </h3>
       </div>
       <div class="info-footer">
@@ -20,7 +21,7 @@
               aria-label="Full name"
             />
             <button class="btn flex-shrink-0 py-1 px-2 " type="button">
-              Register
+              Sign up
             </button>
           </div>
         </form>
@@ -31,7 +32,7 @@
 
 <script>
 export default {
-  name: 'Contact'
+  name: 'Request'
 }
 </script>
 
@@ -46,10 +47,10 @@ export default {
   padding: 50px;
   background: #2858d4;
   color: #85edee;
-
   @media (max-width: 768px) {
     padding: 0;
   }
+
   .contact-content {
     @media (max-width: 768px) {
       padding: 30px 0;
@@ -65,6 +66,7 @@ export default {
       }
     }
     .sub-info {
+      font-size: 20px;
       @media (max-width: 768px) {
         font-size: 16px;
       }

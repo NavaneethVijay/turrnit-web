@@ -97,10 +97,9 @@ export default {
 .whyuse-content {
   box-sizing: border-box;
   padding: 20px 0;
-  min-height: 80vh;
-
+  margin-bottom: 80px;
   .heading {
-    margin-top: 50px;
+    margin: 50px 0;
   }
   .sub-info {
     margin: 20px auto;

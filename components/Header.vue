@@ -2,23 +2,12 @@
   <div class="header-main container">
     <header>
       <nav class="flex items-center justify-between flex-wrap">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <svg
-            class="fill-current h-8 w-8 mr-2"
-            width="54"
-            height="54"
-            viewBox="0 0 54 54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-            />
-          </svg>
-          <span class="font-semibold text-xl tracking-tight">Turrnit</span>
+        <div class="flex items-center flex-shrink-0 mr-6">
+          <span class="logo-title">Turrnit</span>
         </div>
         <div class="block lg:hidden">
           <button
-            class="flex items-center px-3 py-2 border rounded  border-teal-400 hover:text-white hover:border-white"
+            class="flex items-center px-3 py-2 border rounded border-teal-400 hover:border-white"
           >
             <svg
               class="fill-current h-3 w-3"
@@ -30,23 +19,23 @@
             </svg>
           </button>
         </div>
-        <div class="w-full block lg:flex lg:items-center lg:w-auto menu-list ">
+        <div class="w-full block lg:flex lg:items-center lg:w-auto menu-list">
           <div class="text-lg lg:flex-grow mr-10">
             <nuxt-link
               to="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4"
             >
               Overview
             </nuxt-link>
             <nuxt-link
               to="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+              class="block mt-4 lg:inline-block lg:mt-0 mr-4"
             >
               Features
             </nuxt-link>
             <nuxt-link
               to="#responsive-header"
-              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white"
+              class="block mt-4 lg:inline-block lg:mt-0"
             >
               Why Turrnit ?
             </nuxt-link>
@@ -63,23 +52,25 @@ export default {}
 
 <style lang="scss" scoped>
 .header-main {
-  background: #2858d4;
-  color: #fff;
+  color: #2e2e2e;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px #2858d433;
   @media (max-width: 768px) {
     padding: 0;
   }
   nav {
-    padding: 15px;
+    padding: 15px 0;
   }
   .menu-list {
     @media (max-width: 768px) {
       display: none;
     }
+  }
+  .logo-title {
+    color: #2e2e2e;
+    font-weight: bold;
+    font-size: 42px;
   }
 }
 </style>

@@ -12,8 +12,8 @@
           <div class="info-main">
             <div class="info-wrapper">
               <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed nulla a enim ultrices condimentum.
+                Get Newspaper, Magazines and other Print Media delivered to your
+                doorstep.
               </h3>
             </div>
           </div>
@@ -57,7 +57,7 @@
       <div class="newspaper-sources w-1/2">
         <img
           class="landing-side-img"
-          src="~assets/images/landing-bike.png"
+          src="~assets/images/undraw_deliveries_131a.svg"
           alt=""
         />
       </div>
@@ -73,14 +73,14 @@ export default {
 
 <style lang="scss" scoped>
 .landing-main {
-  @media (max-width: 767px) {
-    min-height: 100vh;
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    padding: 0;
   }
 }
 .section-content {
-  height: 60vh;
   align-items: center;
-  padding: 50px 0;
+  margin: 80px auto;
   @media (max-width: 768px) {
     flex-direction: column;
     box-sizing: border-box;
@@ -91,6 +91,11 @@ export default {
     .info {
       height: 100%;
       padding: 0 20px;
+      .title {
+        @media (max-width: 768px) {
+          font-size: 3rem;
+        }
+      }
     }
   }
   .slider-title {

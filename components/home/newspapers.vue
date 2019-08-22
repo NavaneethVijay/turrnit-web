@@ -2,11 +2,11 @@
   <div class="container newspapers-main">
     <div class="slider-title">
       <h1 class="title text-5xl text-center">
-        Popular Newspapers
+        Acclaimed Publications
       </h1>
       <h3 class="sub-info text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nulla
-        a enim ultrices condimentum. Maecenas sit amet vehicula odio.
+        Instant subscriptions for world class Newspapers, Magazines,
+        Publications.
       </h3>
     </div>
     <hooper :settings="hooperSettings">
@@ -81,6 +81,8 @@ export default {
         transition: 1000,
         trimWhiteSpace: true,
         shortDrag: false,
+        mouseDrag: false,
+        wheelControl: false,
         itemsToSlide: 1,
         autoPlay: false,
         playSpeed: 3000,
@@ -99,7 +101,7 @@ export default {
 <style lang="scss" scoped>
 .newspapers-main {
   margin-top: 30px;
-  padding: 20px 0;
+  padding: 50px 0;
   border-bottom: 2px solid #e6e6e6;
 }
 

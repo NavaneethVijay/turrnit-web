@@ -11,19 +11,35 @@
         </h3>
       </div>
       <div class="info-footer">
-        <form class="w-full ">
+        <form class="w-full" @submit.prevent>
           <div class="flex items-center py-2">
             <input
+              v-model="email"
               class="appearance-none bg-transparent border-none w-full
               text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"
               placeholder="Enter your email"
               aria-label="Full name"
+              @blur="validateEmail"
+              @input="
+                () => {
+                  message = ''
+                }
+              "
             />
-            <button class="btn flex-shrink-0 py-1 px-2 " type="button">
+            <button
+              class="btn flex-shrink-0 py-1 px-2 "
+              type="button"
+              @click="register"
+            >
               Sign up
             </button>
           </div>
+          <transition name="slide-fade">
+            <p v-if="message" class="error-message">
+              {{ message }}
+            </p>
+          </transition>
         </form>
       </div>
     </div>
@@ -31,13 +47,23 @@
 </template>
 
 <script>
+import signup from '@/mixins/signup.js'
 export default {
-  name: 'Request'
+  name: 'Request',
+  mixins: [signup]
 }
 </script>
 
 <style lang="scss" scoped>
 .contact-main {
+  .error-message {
+    color: #fa4d41;
+    position: absolute;
+    font-size: 12px;
+    left: 25px;
+    bottom: 10px;
+    text-transform: capitalize;
+  }
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -77,10 +103,23 @@ export default {
     .info-footer {
       width: 50%;
       margin: 50px auto;
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 50px 0 50px 0;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
+        position: relative;
+        input {
+          border-bottom: 1px solid #f2f2f2;
+          transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+          &:focus {
+            border-bottom: 1px solid #2858d4;
+          }
+        }
+      }
       @media (max-width: 768px) {
         width: 100%;
         form {
-          background: none;
           > div {
             display: flex;
             flex-direction: column;
@@ -89,15 +128,6 @@ export default {
               margin-top: 20px;
             }
           }
-        }
-      }
-      form {
-        background: #fff;
-        padding: 20px;
-        border-radius: 50px 0 50px 0;
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.08);
-        input {
-          border-bottom: 1px solid #f2f2f2;
         }
       }
     }

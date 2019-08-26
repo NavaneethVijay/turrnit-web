@@ -37,6 +37,10 @@ export default {
     {
       src: '~/plugins/hooper',
       ssr: false
+    },
+    {
+      src: '~/plugins/sweet',
+      ssr: false
     }
   ],
   /*
@@ -46,7 +50,37 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    [
+      'nuxt-fire',
+      {
+        // Required:
+        config: {
+          development: {
+            apiKey: 'AIzaSyBRZcUxyc_R-UBCXSnOWhckpcyhDZNhxdA',
+            authDomain: 'turrnit.firebaseapp.com',
+            databaseURL: 'https://turrnit.firebaseio.com',
+            projectId: 'turrnit',
+            storageBucket: 'turrnit.appspot.com',
+            messagingSenderId: '46910929747',
+            appId: '1:46910929747:web:dccfc1f6b957c516'
+          },
+          production: {
+            apiKey: 'AIzaSyBRZcUxyc_R-UBCXSnOWhckpcyhDZNhxdA',
+            authDomain: 'turrnit.firebaseapp.com',
+            databaseURL: 'https://turrnit.firebaseio.com',
+            projectId: 'turrnit',
+            storageBucket: 'turrnit.appspot.com',
+            messagingSenderId: '46910929747',
+            appId: '1:46910929747:web:dccfc1f6b957c516'
+          }
+        },
+        // The following options are optional:
+        useOnly: ['auth', 'firestore', 'realtimeDb', 'messaging'],
+        customEnv: false,
+        functionsLocation: 'us-central1'
+      }
+    ]
   ],
   /*
    ** Axios module configuration

@@ -18,38 +18,33 @@
             </div>
           </div>
           <div class="info-footer">
-            <form class="w-full max-w-sm">
+            <form class="w-full max-w-sm" @submit.prevent>
               <div class="flex  py-2 form-contents">
-                <!-- <div class="input-control">
-                  <input
-                    class="appearance-none bg-transparent border-none w-full
-              text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="Name"
-                    aria-label="Full name"
-                  />
-                </div> -->
                 <div class="input-control">
                   <input
+                    v-model="email"
                     class="appearance-none bg-transparent border-none w-full
               text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                     type="text"
                     placeholder="Enter your email"
                     aria-label="Full name"
+                    @blur="validateEmail"
+                    @input="
+                      () => {
+                        message = ''
+                      }
+                    "
                   />
                 </div>
-                <!-- <router-link to="/work-with-us">
-                  Want to be a partner ?
-                </router-link>
-
-                <div class="checkbox-wrapper input-control">
-                  <input id="merchant" type="checkbox" name="merchant" />
-                  <span class="checkbox-label">Become a partner</span>
-                </div> -->
-                <button class="btn flex-shrink-0 py-1 px-2 " type="button">
+                <button class="btn flex-shrink-0 py-1 px-2 " @click="register">
                   Notify Me
                 </button>
               </div>
+              <transition name="slide-fade">
+                <p v-if="message" class="error-message">
+                  {{ message }}
+                </p>
+              </transition>
             </form>
           </div>
         </div>
@@ -66,14 +61,28 @@
 </template>
 
 <script>
+import signup from '@/mixins/signup.js'
+
 export default {
-  name: 'Landing'
+  name: 'Landing',
+  mixins: [signup]
 }
 </script>
 
 <style lang="scss" scoped>
 .landing-main {
   padding: 50px 0;
+  .error-message {
+    color: #fa4d41;
+    position: absolute;
+    font-size: 12px;
+    left: 25px;
+    bottom: 15px;
+    text-transform: capitalize;
+    @media (max-width: 768px) {
+      bottom: 8px;
+    }
+  }
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -142,6 +151,9 @@ export default {
     height: 100%;
   }
   .info-footer {
+    form {
+      position: relative;
+    }
     .form-contents {
       align-items: center;
       margin: 10px 0;
@@ -161,7 +173,7 @@ export default {
     }
     .input-control {
       margin: 10px 0;
-      padding: 15px 20px;
+      padding: 10px;
       border-radius: 50px 0 50px 0;
       width: 100%;
       @media (max-width: 768px) {

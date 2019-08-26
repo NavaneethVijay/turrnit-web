@@ -6,8 +6,8 @@
           Why use Turrnit
         </h1>
         <h3 class="sub-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-          nulla a enim ultrices condimentum. Maecenas sit amet vehicula odio.
+          Solve your day to day problem at turrnit, because we are committed to
+          solve in a way you love.
         </h3>
       </div>
       <div class="item-grid">
@@ -17,15 +17,15 @@
               <img
                 width="60px"
                 height="60px"
-                src="~assets/icons/cheap.svg"
+                src="~assets/icons/payment-method.svg"
                 alt=""
               />
             </div>
             <h3 class="card-title">
-              Low cost deals
+              Pay per use
             </h3>
             <p class="info">
-              Cheaper price in your locality that you have never seeen.
+              Unlimited resources but only pay for the days you use.
             </p>
           </div>
         </div>

@@ -41,6 +41,10 @@ export default {
     {
       src: '~/plugins/sweet',
       ssr: false
+    },
+    {
+      src: '~/plugins/ga',
+      ssr: false
     }
   ],
   /*

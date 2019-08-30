@@ -17,7 +17,7 @@
               <img
                 width="60px"
                 height="60px"
-                src="~assets/icons/payment-method.svg"
+                src="~assets/icons/cash.svg"
                 alt=""
               />
             </div>
@@ -65,7 +65,7 @@
             </p>
           </div>
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <div class="item-contents">
             <div class="content-img">
               <img
@@ -82,7 +82,7 @@
               Track your morning delivery
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

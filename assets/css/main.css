@@ -1,0 +1,62 @@
+body {
+  color: #2e2e2e;
+  background: #f7f9ff;
+  overflow-x: hidden;
+}
+
+
+.btn {
+  color: #2858d4;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 4px solid #2858d4;
+  border-left: 4px solid #2858d4;
+  border-top: 0.5px solid #2858d4;
+  border-right: 0.5px solid #2858d4;
+  border-radius: 20px 0 20px 0;
+  font-size: 16px;
+  outline: none;
+}
+.btn:hover {
+  color: #fff;
+  background: #2858d4;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn::-moz-focus-inner{
+  border: 0;
+}
+
+.title {
+  font-weight: bold;
+  line-height: 80px;
+  color: #2e2e2e;
+
+}
+
+@media(max-width: 768px){
+  .title{
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .btn{
+    font-size: 14px;
+    border-radius: 15px 0 15px 0;
+  }
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-10px);
+  opacity: 0;
+}

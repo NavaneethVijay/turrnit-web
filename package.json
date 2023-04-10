@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/pwa": "^3.3.5",
     "firebase": "^6.4.2",
     "hooper": "^0.3.2",
     "node-sass": "^4.12.0",
